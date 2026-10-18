@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Student Feedback</h1>
+<form method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name"><br><br>
+    <label>Feedback:</label><br>
+    <textarea name="feedback"></textarea><br><br>
+    <button type="submit">Submit</button>
+</form>
+{% if message %}
+    <p>{{ message }}</p>
+{% endif %}
+
+</body>
+</html>
